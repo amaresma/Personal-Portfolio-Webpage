@@ -4,51 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Webpage</title>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
 </head>
-<body>
+<body class="preload">
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+    </header>
+    <nav class="nav">
+        <div class="nav__links">
+            <a href="#" class="nav__link">
+                <i class="material-icons">dashboard</i>
+                Dashboard
+            </a>
+            <a href="#" class="nav__link nav__link--active">
+                <i class="material-icons">source</i>
+                Projects
+            </a>
+            <a href="#" class="nav__link">
+                <i class="material-icons">lock</i>
+                Security
+            </a>
+            <a href="#" class="nav__link">
+                <i class="material-icons">history</i>
+                History
+            </a>
+            <a href="#" class="nav__link">
+                <i class="material-icons">person</i>
+                Profile
+            </a>
+        </div>
+        <div class="nav__overlay">
+
+        </div>
+    </nav>
+    <section id="welcome-section">
+        <h1>Welcome to my Portolio Web Page</h1>
+    </section>
     <main>
-        <div id="container">
-            <header id="welcome-section">
-                <h1>Welcome to my Personal Profile Page!</h1>
-            </header>
-                <nav id="navbar">
-                    <ul>
-                        <li><a href="#personal-profile">Personal Profile</a></li>
-                        <li><a href="https://github.com/amaresma" target="_blank">My GitHub</a></li>
-                        <li><a href="#projects">Projects</a></li>  
-                    </ul>
-                </nav> 
-            <div class="clearfix"></div>
-            <div id="content">
-                <div id="personal-profile">
-                    <h2>Personal Profile</h2>
-                    <p>This is the personal profile</p>
-                </div>
-                <div id="projects">
-                    <h2>Projects</h2>
-                    <section id="tribute-page" class="project-tile">
-                        <h2>Tribute Page</h2>
-                        <p><a href="https://amaresma.github.io/tribute_page_eric_carr/">Tribute Page</a></p>
-                    </section>
-                    <section id="survey-form" class="project-tile">
-                        <h2>Survey Form</h2>
-                        <p><a href="https://amaresma.github.io/survey_form/">Survey Form</a></p>
-                    </section>
-                    <section id="landing-page" class="project-tile">
-                        <h2>Landing Page</h2>
-                        <p><a href="https://amaresma.github.io/Product-Landing-Page/">Product Landing Page</a></p>
-                    </section>
-                    <section id="technical-documentation-page" class="project-tile">
-                        <h2>Technical Documentation Page</h2>
-                        <p><a href="https://amaresma.github.io/Technical-Documentation-Page/">Technical Documentation Page</a></p>
-                    </section>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <footer>Albert Maresma Personal Portfolio Web</footer>
-        </div>   
-    </main> 
+        Hi my name is Albert
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
