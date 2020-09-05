@@ -16,39 +16,85 @@
             <i class="material-icons">menu</i>
         </button>
     </header>
-    <nav class="nav">
-        <div class="nav__links">
-            <a href="#" class="nav__link">
-                <i class="material-icons">dashboard</i>
-                Dashboard
-            </a>
-            <a href="#" class="nav__link nav__link--active">
-                <i class="material-icons">source</i>
-                Projects
-            </a>
-            <a href="#" class="nav__link">
-                <i class="material-icons">lock</i>
-                Security
-            </a>
-            <a href="#" class="nav__link">
-                <i class="material-icons">history</i>
-                History
-            </a>
-            <a href="#" class="nav__link">
-                <i class="material-icons">person</i>
-                Profile
-            </a>
-        </div>
-        <div class="nav__overlay">
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav__links">
+                <div class="nav__link" data-li="about" class="active">
+                    <i class="material-icons">person</i>
+                    About me
+                </div>
+                <div class="nav__link" data-li="portfolio">
+                    <i class="material-icons">source</i>
+                    Portfolio
+                </div>
+                <div class="nav__link" data-li="social-media">
+                    <i class="material-icons">facebook</i>
+                    Social Media
+                </div>
+                <div class="nav__link" data-li="blog">
+                    <i class="material-icons">recent_actors</i>
+                    Blog
+                </div>
+                <div class="nav__link" data-li="contact">
+                    <i class="material-icons">contact_mail</i>
+                    Contact
+                </div>
+            </div>
+            <div class="nav__overlay">
 
-        </div>
-    </nav>
-    <section id="welcome-section">
-        <h1>Welcome to my Portolio Web Page</h1>
-    </section>
-    <main>
-        Hi my name is Albert
-    </main>
+            </div>
+        </nav>
+        <section id="welcome-section">
+            <h1>Welcome to my Portolio Web Page</h1>
+        </section>
+        <main id="container">
+            <section>
+                <div class="item about">
+                    <div class="item__info">
+                        <div class="img"></div>
+                            <p>About me</p>
+                    </div>
+                        <p>About me section</p>
+                    </div>
+            </section>
+            <section>
+                <div class="item portfolio" style="display: none;">
+                    <div class="item__info">
+                        <div class="img"></div>
+                            <p>Portfolio</p>
+                    </div>
+                        <p>This is the Portfolio section</p>
+                </div>
+            </section>
+            <section>
+                <div class="item social-media" style="display: none;">
+                    <div class="item__info">
+                        <div class="img"></div>
+                            <p>Social Media</p>
+                    </div>
+                        <p>This is the Social Media section</p>
+                </div>
+            </section>
+            <section>
+                <div class="item blog" style="display: none;">
+                    <div class="item__info">
+                        <div class="img"></div>
+                            <p>Blog</p>
+                    </div>
+                        <p>This is the Blog section</p>
+                </div>
+            </section>
+            <section>
+                <div class="item contact" style="display: none;">
+                    <div class="item__info">
+                        <div class="img"></div>
+                            <p>Contact</p>
+                    </div>
+                        <p>This is the Contact section</p>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
