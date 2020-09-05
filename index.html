@@ -17,7 +17,7 @@
         </button>
     </header>
     <div class="wrapper">
-        <nav class="nav">
+        <nav id="navbar" class="nav">
             <div class="nav__links">
                 <div class="nav__link" data-li="about" class="active">
                     <i class="material-icons">person</i>
@@ -31,39 +31,44 @@
                     <i class="material-icons">facebook</i>
                     Social Media
                 </div>
-                <div class="nav__link" data-li="blog">
+                <div class="nav__link" data-li="github">
+                    <a href=""></a>
                     <i class="material-icons">recent_actors</i>
-                    Blog
+                    GitHub
                 </div>
                 <div class="nav__link" data-li="contact">
-                    <i class="material-icons">contact_mail</i>
-                    Contact
+                    <a href="#"><i class="material-icons">contact_mail</i>
+                        Contact</a>
                 </div>
             </div>
             <div class="nav__overlay">
 
             </div>
         </nav>
-        <section id="welcome-section">
-            <h1>Welcome to my Portolio Web Page</h1>
+        <section >
+            
         </section>
         <main id="container">
             <section>
-                <div class="item about">
+                <div class="item about" id="welcome-section">
                     <div class="item__info">
                         <div class="img"></div>
-                            <p>About me</p>
+                        <h1>Welcome to my Portolio Web Page</h1>
                     </div>
-                        <p>About me section</p>
+                        <p>I am a junior developer, I hope you'll like my work so far.</p>
                     </div>
             </section>
             <section>
-                <div class="item portfolio" style="display: none;">
+                <div id="projects" class="item portfolio" style="display: none;">
                     <div class="item__info">
                         <div class="img"></div>
                             <p>Portfolio</p>
                     </div>
                         <p>This is the Portfolio section</p>
+                        <div class="project-tile">
+                            <a href="https://amaresma.github.io/Technical-Documentation-Page/">
+                            Technical Documentation Page</a>
+                        </div>
                 </div>
             </section>
             <section>
@@ -76,12 +81,13 @@
                 </div>
             </section>
             <section>
-                <div class="item blog" style="display: none;">
+                <div class="item github" style="display: none;">
                     <div class="item__info">
                         <div class="img"></div>
-                            <p>Blog</p>
+                            <p>GitHub</p>
                     </div>
-                        <p>This is the Blog section</p>
+                        <p>This is the Github section</p>
+                        <p>Visit my <a href="https://github.com/amaresma" target="_blank">GitHub</a></p>
                 </div>
             </section>
             <section>

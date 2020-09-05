@@ -1,18 +1,26 @@
 
-/* Toggle */
+/* Toggle display arrangement */
 
-window.addEventListener("load", () => {
+window.addEventListener("load", function() {
   document.body.classList.remove("preload");
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+/* Toggle show & hide */
+
+document.addEventListener("DOMContentLoaded", function() {
   const nav = document.querySelector(".nav");
 
-  document.querySelector("#btnNav").addEventListener("click", () => {
+  document.querySelector("#btnNav").addEventListener("click", function() {
     nav.classList.add("nav--open");
   });
 
-  document.querySelector(".nav__overlay").addEventListener("click", () => {
+  document.querySelector(".nav__overlay").addEventListener("click", function() {
+    nav.classList.remove("nav--open");
+  });
+  
+  /* Hide Toggle after click a link */
+
+  document.querySelector(".nav__links").addEventListener("click", function() {
     nav.classList.remove("nav--open");
   });
 });
@@ -37,7 +45,7 @@ for (var i = 0; i < li_elements.length; i++) {
       document.querySelector("." + li_value).style.display = "block";
     } else if (li_value == "social-media") {
       document.querySelector("." + li_value).style.display = "block";
-    } else if (li_value == "blog") {
+    } else if (li_value == "github") {
       document.querySelector("." + li_value).style.display = "block";
     } else if (li_value == "contact") {
       document.querySelector("." + li_value).style.display = "block";

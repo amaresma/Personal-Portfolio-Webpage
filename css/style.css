@@ -59,6 +59,10 @@ body {
     cursor: pointer;
 }
 
+.nav__link a {
+    text-decoration: none;
+}
+
 .nav__link > i {
     margin-right: 15px;
 }
