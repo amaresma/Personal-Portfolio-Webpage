@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 var li_elements = document.querySelectorAll(".nav .nav__links .nav__link");
 var item_elements = document.querySelectorAll(".item");
 for (var i = 0; i < li_elements.length; i++) {
+
   li_elements[i].addEventListener("click", function() {
     li_elements.forEach(function(li) {
       li.classList.remove("active");

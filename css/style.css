@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     --header-height: 50px;
@@ -77,6 +81,11 @@ body {
     background: #eeeeee;
 }
 
+.active {
+    color: white;
+    background: red;
+}
+
 .nav__overlay {
     position: fixed;
     top: 0;
@@ -95,11 +104,22 @@ body {
     opacity: 1;
 }
 
-#welcome-section {
+.item__info {
     background: red;
     height: var(--header-height);
     font-weight: bold;
     font-size: 15px;
     line-height: 50px;
     text-align: center;
+}
+
+.item {
+    font-size: 15px;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        background: yellow;
+    }
 }

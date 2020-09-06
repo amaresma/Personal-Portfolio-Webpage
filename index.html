@@ -20,44 +20,42 @@
         <nav id="navbar" class="nav">
             <div class="nav__links">
                 <div class="nav__link" data-li="about" class="active">
-                    <i class="material-icons">person</i>
+                    <a href=""><i class="material-icons">person</i></a>
                     About me
                 </div>
                 <div class="nav__link" data-li="portfolio">
-                    <i class="material-icons">source</i>
+                    <a href=""><i class="material-icons">source</i></a>
                     Portfolio
                 </div>
                 <div class="nav__link" data-li="social-media">
-                    <i class="material-icons">facebook</i>
+                    <a href=""><i class="material-icons">facebook</i></a>
                     Social Media
                 </div>
                 <div class="nav__link" data-li="github">
-                    <a href=""></a>
-                    <i class="material-icons">recent_actors</i>
+                    <a href=""><i class="material-icons">recent_actors</i></a>  
                     GitHub
                 </div>
                 <div class="nav__link" data-li="contact">
                     <a href="#"><i class="material-icons">contact_mail</i>
-                        Contact</a>
+                    Contact</a>
                 </div>
             </div>
             <div class="nav__overlay"></div>
         </nav>
-        <main id="container">
-            <section>
-                <div class="item about" id="welcome-section">
+        <main>
+            <section id="welcome-section" class="container">
+                <div class="item about">
                     <div class="item__info">
-                        <div class="img"></div>
                         <h1>Welcome to my Portolio Web Page</h1>
                     </div>
                         <p>I am a junior developer, I hope you'll like my work so far.</p>
                     </div>
             </section>
-            <section>
+            <section class="container">
                 <div id="projects" class="item portfolio" style="display: none;">
                     <div class="item__info">
                         <div class="img"></div>
-                            <p>Portfolio</p>
+                            <h1>Portfolio</h1>
                     </div>
                         <p>This is the Portfolio section</p>
                         <div class="project-tile">
@@ -66,30 +64,27 @@
                         </div>
                 </div>
             </section>
-            <section>
+            <section class="container">
                 <div class="item social-media" style="display: none;">
                     <div class="item__info">
-                        <div class="img"></div>
-                            <p>Social Media</p>
+                            <h1>Social Media</h1>
                     </div>
                         <p>This is the Social Media section</p>
                 </div>
             </section>
-            <section>
+            <section class="container">
                 <div class="item github" style="display: none;">
                     <div class="item__info">
-                        <div class="img"></div>
-                            <p>GitHub</p>
+                            <h1>GitHub</h1>
                     </div>
                         <p>This is the Github section</p>
-                        <p>Visit my <a href="https://github.com/amaresma" target="_blank">GitHub</a></p>
+                        <p>Visit my <a id="profile-link" href="https://github.com/amaresma" target="_blank">GitHub</a></p>
                 </div>
             </section>
             <section>
                 <div class="item contact" style="display: none;">
                     <div class="item__info">
-                        <div class="img"></div>
-                            <p>Contact</p>
+                            <h1>Contact</h1>
                     </div>
                         <p>This is the Contact section</p>
                 </div>
